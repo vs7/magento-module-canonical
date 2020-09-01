@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <vs7 translate="label" module="vs7_canonical">
+            <label>VS7</label>
+            <sort_order>400</sort_order>
+        </vs7>
+    </tabs>
+
+    <sections>
+        <vs7_canonical translate="label" module="vs7_canonical">
+            <label>Canonical</label>
+            <tab>vs7</tab>
+            <sort_order>1000</sort_order>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <canonical_settings>
+                    <label>Canonical Settings</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <https>
+                            <label>Force HTTPS</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </https>
+                        <params>
+                            <label>Needed params</label>
+                            <comment>List necessary elements through a comma</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </params>
+                    </fields>
+                </canonical_settings>
+            </groups>
+        </vs7_canonical>
+    </sections>
+</config>
